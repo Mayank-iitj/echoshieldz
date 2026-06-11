@@ -20,7 +20,7 @@ export default function ScrollRevealText({ text }: ScrollRevealTextProps) {
   return (
     <div 
       ref={containerRef} 
-      className="w-full min-h-[50vh] flex items-center justify-center bg-black border-y border-neutral-900 py-24"
+      className="w-full min-h-[50vh] flex items-center justify-center bg-[var(--bg-primary)] border-y border-[var(--border-default)] py-24"
     >
       <div className="max-w-5xl mx-auto px-6 text-center">
         <p className="text-2xl md:text-4xl lg:text-5xl font-medium leading-relaxed tracking-tight text-neutral-600 flex flex-wrap justify-center">

@@ -47,19 +47,19 @@ export default function InteractiveTestimonials() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div className="w-full py-24 bg-black border-b border-neutral-900">
+    <div className="w-full py-24 bg-[var(--bg-primary)] border-b border-[var(--border-default)]">
       <div className="max-w-4xl mx-auto px-6">
         
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-neutral-800 bg-neutral-900/50 mb-4">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[var(--border-strong)] bg-[var(--bg-elevated)]/50 mb-4">
             <span className="flex h-2 w-2 rounded-full bg-blue-500 animate-pulse" />
-            <span className="text-[11px] font-semibold text-neutral-400 uppercase tracking-wider">User Reviews</span>
+            <span className="text-[11px] font-semibold text-[var(--text-secondary)] uppercase tracking-wider">User Reviews</span>
           </div>
           <h2 className="text-3xl md:text-5xl font-bold text-white tracking-tight">
             Trusted by thousands of phone users
           </h2>
-          <p className="text-sm md:text-base text-neutral-400 mt-4 max-w-xl mx-auto">
+          <p className="text-sm md:text-base text-[var(--text-secondary)] mt-4 max-w-xl mx-auto">
             See how EchoShield is protecting everyday users from financial fraud and scam calls.
           </p>
         </div>
@@ -102,8 +102,8 @@ export default function InteractiveTestimonials() {
                 onClick={() => setActiveIndex(index)}
                 className={`p-4 rounded-xl border text-left transition-all duration-300 relative ${
                   isActive 
-                    ? 'bg-neutral-900/50 border-neutral-700 shadow-xl' 
-                    : 'bg-black border-neutral-900 hover:border-neutral-800 hover:bg-neutral-950/40'
+                    ? 'bg-[var(--bg-elevated)]/50 border-neutral-700 shadow-xl' 
+                    : 'bg-[var(--bg-primary)] border-[var(--border-default)] hover:border-[var(--border-strong)] hover:bg-[var(--bg-surface)]/40'
                 }`}
               >
                 <div className="flex items-center gap-3">
@@ -112,10 +112,10 @@ export default function InteractiveTestimonials() {
                   </div>
                   <div>
                     <h4 className="text-xs font-bold text-white leading-snug">{item.name}</h4>
-                    <p className="text-[10px] text-neutral-500 leading-tight mt-0.5">{item.role}</p>
+                    <p className="text-[10px] text-[var(--text-tertiary)] leading-tight mt-0.5">{item.role}</p>
                   </div>
                 </div>
-                <div className="mt-3 flex items-center justify-between text-[10px] text-neutral-500">
+                <div className="mt-3 flex items-center justify-between text-[10px] text-[var(--text-tertiary)]">
                   <span>Verified User</span>
                   <span>{item.date}</span>
                 </div>
